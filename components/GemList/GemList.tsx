@@ -8,7 +8,7 @@ type GemsListProps = {
 
 const mapGemsToCards = (gems: TGem[]) =>
 	gems.map(({ name, id, image }) => (
-		<Grid key={id} xs={12} sm={6}>
+		<Grid key={id} xs={12} sm={6} justify="center">
 			<Link href="/gems/[id]" as={`/gems/${id}`} passHref>
 				<Card isHoverable isPressable>
 					<Card.Body css={{ p: 0 }}>
@@ -20,18 +20,6 @@ const mapGemsToCards = (gems: TGem[]) =>
 							alt={`Image of ${name}`}
 						/>
 					</Card.Body>
-					{/* type ObjectFit =
-   | 'contain'
-   | 'cover'
-   | 'fill'
-   | 'none'
-   | 'scale-down'
-   | 'inherit'
-   | 'initial'
-   | 'revert'
-   | 'unset'
-); */}
-
 					<Card.Footer css={{ justifyItems: 'flex-start' }}>
 						<Text b>{name}</Text>
 					</Card.Footer>

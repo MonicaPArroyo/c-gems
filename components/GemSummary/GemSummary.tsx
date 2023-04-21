@@ -1,33 +1,30 @@
 import React from 'react';
-import { Item, Label } from 'semantic-ui-react';
-
-import AddToCart from './AddToCart';
 import GemAttributes from './GemAttributes';
+import { Col, Container, Row, Text, Image } from '@nextui-org/react';
 
 type GemSummaryProps = {
-	product: TGem;
+	gemItem: TGem;
 };
 
-const GemSummary = ({ product }: GemSummaryProps) => (
+const GemSummary = ({ gemItem }: GemSummaryProps) => (
 	<>
-		<Item.Group as="section">
-			<Item style={{ alignItems: 'center' }}>
-				<Item.Image size="medium">
-					<img src={product.image} alt={product.name} />
-				</Item.Image>
-				<Item.Content>
-					<Item.Header as="h1">{product.name}</Item.Header>
-					<Item.Description>
-						<p>{product.price}</p>
-						<Label>{`SKU: ${product.sku}`}</Label>
-					</Item.Description>
-					<Item.Extra>
-						<AddToCart product={product} />
-					</Item.Extra>
-				</Item.Content>
-			</Item>
-		</Item.Group>
-		<GemAttributes {...product.attributes} />
+		<Container as="section" css={{ mt: '2rem' }}>
+			<Row gap={1} css={{ display: 'flex', alignItems: 'center' }}>
+				<Col css={{ display: 'flex', justifyContent: 'center' }}>
+					<Image
+						src={gemItem.image}
+						alt={gemItem.name}
+						objectFit="contain"
+						width={500}
+						height={500}
+					/>
+				</Col>
+				<Col css={{ display: 'flex', justifyContent: 'center' }}>
+					<Text h1>{gemItem.name}</Text>
+				</Col>
+			</Row>
+		</Container>
+		<GemAttributes {...gemItem.attributes} />
 	</>
 );
 

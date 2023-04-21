@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 import Layout from '@/components/Layout/Layout';
-// import GemSummary from '@/components/GemSummary/GemSummary';
+import GemSummary from '@/components/GemSummary/GemSummary';
 
-const ProductPage = () => {
+const GemPage = () => {
 	const [gemItem, setGemItem] = useState<TGem | null>();
 	const {
 		query: { id },
@@ -20,9 +20,9 @@ const ProductPage = () => {
 	}, [id]);
 	return (
 		<Layout>
-			{/* {product == null ? null : <GemSummary product={gemItem} />} */}
+			{gemItem == null ? null : <GemSummary gemItem={gemItem} />}
 		</Layout>
 	);
 };
 
-export default ProductPage;
+export default GemPage;

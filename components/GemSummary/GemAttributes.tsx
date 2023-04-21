@@ -1,41 +1,39 @@
 import React from 'react';
-import { Header, Divider, Table } from 'semantic-ui-react';
+import { Text, Table, Spacer } from '@nextui-org/react';
+import { TableBody } from '@nextui-org/react/types/table/base';
 
 const GemAttributes = ({ description, ...otherAttributes }: TGemAttributes) => (
-	<section className="container">
-		<Header as="h3">About this avocado</Header>
-		<p>{description}</p>
+	<section>
+		<Text h3>About this Gem</Text>
+		<Text>{description}</Text>
 
-		<Divider />
+		<Spacer />
+		<table>
+			<tbody>
+				{Object.keys(otherAttributes).map((key) => (
+					<tr key={key}>
+						<td>{key}</td>
+						<td>{otherAttributes[key]}</td>
+					</tr>
+				))}
+			</tbody>
+		</table>
 
-		<Table celled>
+		{/* <Table bordered>
 			<Table.Header>
 				<Table.Row>
-					<Table.HeaderCell colSpan="2">Attributes</Table.HeaderCell>
+					<Table.Column align="center">Attributes</Table.Column>
 				</Table.Row>
 			</Table.Header>
-
 			<Table.Body>
 				{Object.keys(otherAttributes).map((key) => (
 					<Table.Row key={key}>
-						<Table.Cell className="attr-name">{key}</Table.Cell>
-						<Table.Cell>
-							{
-								otherAttributes[
-									key as keyof typeof otherAttributes
-								]
-							}
-						</Table.Cell>
+						<Table.Column>{key}</Table.Column>
+						<Table.Column>Perla</Table.Column>
 					</Table.Row>
 				))}
 			</Table.Body>
-		</Table>
-
-		<style jsx>{`
-			.container :global(.attr-name) {
-				text-transform: capitalize;
-			}
-		`}</style>
+		</Table> */}
 	</section>
 );
 
