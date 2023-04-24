@@ -9,10 +9,10 @@ const GemAttributes = ({ description, ...otherAttributes }: TGemAttributes) => (
 
 			<Spacer />
 
-			<Table>
+			<Table bordered>
 				<Table.Header>
-					<Table.Column align="center">Attribute</Table.Column>
-					<Table.Column align="center">Description</Table.Column>
+					<Table.Column>Attribute</Table.Column>
+					<Table.Column>Description</Table.Column>
 				</Table.Header>
 				<Table.Body>
 					{Object.entries(otherAttributes).map(([key, value]) => (
