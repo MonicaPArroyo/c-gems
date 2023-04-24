@@ -14,7 +14,7 @@ type TGemAttributes = {
 	species: string[];
 	weapons: string[];
 	sex: string;
-	gender_pronoun: string;
+	gender_pronoun: string[];
 	hair: string[];
 	eyes: string[];
 	gemstone: string[];
