@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Grid, Text } from '@nextui-org/react';
-import { DamagedLapiz } from '@/components/Icons';
+import { DamagedLapiz } from '@components/Icons';
 
 const ModalHeaderContent = () => {
 	return (

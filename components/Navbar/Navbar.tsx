@@ -2,9 +2,7 @@ import React, { useContext } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Navbar as NNav, Container, Text } from '@nextui-org/react';
-
-import { Lapiz } from '@/components/Icons';
-import ShoppingCartIcon from './ShoppingCartIcon';
+import { Lapiz } from '@components/Icons';
 
 const Navbar = () => {
 	const { pathname } = useRouter();

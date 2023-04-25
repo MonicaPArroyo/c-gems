@@ -1,7 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
 import { Container, Col, Row, Grid, Text, Link } from '@nextui-org/react';
-// import { Segment, Container, Grid, List, Header } from 'semantic-ui-react';
 
 const Footer = () => (
 	<>

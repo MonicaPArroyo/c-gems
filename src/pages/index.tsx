@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Layout from '@/components/Layout/Layout';
-import GemHeader from '@/components/GemHeader/GemHeader';
-import GemList from '@/components/GemList/GemList';
+import Layout from '@components/Layout/Layout';
+import GemHeader from '@components/GemHeader/GemHeader';
+import GemList from '@components/GemList/GemList';
 
 const HomePage = () => {
 	const [gemList, setgemList] = useState<TGem[]>([]);

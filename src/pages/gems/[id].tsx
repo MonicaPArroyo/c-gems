@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
-import Layout from '@/components/Layout/Layout';
-import GemSummary from '@/components/GemSummary/GemSummary';
+import Layout from '@components/Layout/Layout';
+import GemSummary from '@components/GemSummary/GemSummary';
 
 const GemPage = () => {
 	const [gemItem, setGemItem] = useState<TGem | null>();
