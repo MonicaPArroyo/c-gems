@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Grid, Image, Row, Text } from '@nextui-org/react';
-import Layout from '@/components/Layout/Layout';
+import Layout from '@components/Layout/Layout';
 
 const gemFacts = [
 	{
