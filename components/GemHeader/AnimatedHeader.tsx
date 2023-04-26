@@ -9,7 +9,6 @@ type AnimatedHeaderProps = {
 
 const AnimatedHeader = ({ visible, onClick }: AnimatedHeaderProps) => {
 	const lapizRef = useRef<HTMLImageElement>(null);
-	console.log(visible);
 	return (
 		<>
 			<Text
