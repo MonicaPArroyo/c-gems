@@ -8,8 +8,8 @@
       "@database": [
         "database/db.ts"
       ],
-      "@components/*": [
-        "./components/*"
+      "@/components/*": [
+        "src/components/*"
       ]
     },
     "target": "es6",
