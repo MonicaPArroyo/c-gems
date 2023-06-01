@@ -1,5 +1,5 @@
 import React from 'react';
-import GemAttributes from '@components/GemSummary/GemAttributes';
+import GemAttributes from '@/components/GemSummary/GemAttributes';
 import { Col, Container, Row, Text, Image } from '@nextui-org/react';
 
 type GemSummaryProps = {

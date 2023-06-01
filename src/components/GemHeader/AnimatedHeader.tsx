@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Text } from '@nextui-org/react';
-import { Lapiz } from '@components/Icons';
+import { Lapiz } from '@/components/Icons';
 
 type AnimatedHeaderProps = {
 	visible: boolean;

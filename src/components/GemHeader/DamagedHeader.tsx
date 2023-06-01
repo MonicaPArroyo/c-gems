@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DamagedLapiz } from '@components/Icons';
+import { DamagedLapiz } from '@/components/Icons';
 import { Text } from '@nextui-org/react';
 
 const DamagedHeader = () => (

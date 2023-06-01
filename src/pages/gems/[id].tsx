@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { GetStaticProps } from 'next';
 
-import Layout from '@components/Layout/Layout';
-import GemSummary from '@components/GemSummary/GemSummary';
+import Layout from '@/components/Layout/Layout';
+import GemSummary from '@/components/GemSummary/GemSummary';
 
 export const getStaticPaths = async () => {
 	const response = await fetch(`${process.env.API_HOST}/api/gems`);

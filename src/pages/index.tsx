@@ -1,6 +1,6 @@
-import Layout from '@components/Layout/Layout';
-import GemHeader from '@components/GemHeader/GemHeader';
-import GemList from '@components/GemList/GemList';
+import Layout from '@/components/Layout/Layout';
+import GemHeader from '@/components/GemHeader/GemHeader';
+import GemList from '@/components/GemList/GemList';
 import { GetStaticProps } from 'next';
 
 export const getStaticProps: GetStaticProps = async () => {
